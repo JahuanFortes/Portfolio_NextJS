@@ -20,9 +20,9 @@ export default function RootLayout({
           <img
             src="https://via.placeholder.com/303x433.png"
             alt="pic-of-me"
-            className="mx-80 "
+            className="mx-auto "
           />
-          <nav className="flex items-center mx-44 my-5 bg-teal-500 p-6">
+          <nav className="flex items-center mx-44 md:mx-auto my-5 bg-teal-500 p-6">
             <ul className="contents">
               <li className="flex-1">
                 <Link
