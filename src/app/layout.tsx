@@ -18,47 +18,26 @@ export default function RootLayout({
         <header>
           <span>Logo</span>
           <img
-            src="https://via.placeholder.com/303x433.png"
+            src="https://placehold.co/300x400"
             alt="pic-of-me"
             className="mx-auto "
           />
           <nav className="flex items-center mx-44 md:mx-auto my-5 bg-teal-500 p-6">
             <ul className="contents">
               <li className="flex-1">
-                <Link
-                  href={{
-                    pathname: "/",
-                  }}
-                >
-                  About me
-                </Link>
+                <Link href={{ pathname: "/" }}>About me</Link>
               </li>
+
               <li className="flex-1">
-                <Link
-                  href={{
-                    pathname: "/career",
-                  }}
-                >
-                  Career
-                </Link>
+                <Link href={{ pathname: "/career" }}>Career</Link>
               </li>
+
               <li className="flex-1">
-                <Link
-                  href={{
-                    pathname: "/projects",
-                  }}
-                >
-                  Projects
-                </Link>
+                <Link href={{ pathname: "/projects" }}>Projects</Link>
               </li>
+
               <li className="">
-                <Link
-                  href={{
-                    pathname: "/contact",
-                  }}
-                >
-                  Contact
-                </Link>
+                <Link href={{ pathname: "/contact" }}>Contact</Link>
               </li>
             </ul>
           </nav>
@@ -66,6 +45,7 @@ export default function RootLayout({
 
         <main>{children}</main>
 
+        {/* footer */}
         <footer className=" p-2 bg-gray-200 flex justify-center items-center">
           <span> &copy; {new Date().getFullYear()} Jahuan Fortes</span>
         </footer>

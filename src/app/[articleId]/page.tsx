@@ -1,11 +1,12 @@
-export default function Articlesfunction({
+export default async function Articlesfunction({
   params,
 }: {
-  params: { articleId: string };
+  params: Promise<{ articleId: string }>;
 }) {
+  const articleId = 5;
   return (
     <>
-      <h1>article {params.articleId}</h1>
+      <h1>article {articleId}</h1>
     </>
   );
 }
